@@ -1,6 +1,6 @@
 # Syntax Highlighter
 
-A powerful `syntax highlighting` library inspired by [Pygments](https://github.com/pygments/pygments) and [Chroma](https://github.com/alecthomas/chroma), designed for versatility and ease of use. 
+A powerful `Syntax Highlighting` library inspired by [Pygments](https://github.com/pygments/pygments) and [Chroma](https://github.com/alecthomas/chroma), designed for versatility and ease of use. 
 
 This library allows you to define styles, formatters, lexers, and tokens for highlighting code snippets across various programming languages.
 
