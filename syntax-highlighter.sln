@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{88C15FB0-22D9-4B44-950B-15CC0187C7F9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{C98A5AA7-C428-4524-BD69-B7761AFE0E02}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SyntaxHighlighter", "src\SyntaxHighlighter.csproj", "{72311054-0C2C-4666-A8A6-31AE1C356AB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SyntaxHighlighterTests", "tests\SyntaxHighlighterTests.csproj", "{3D0D2C88-4538-4341-8A8D-6B4AC4FC8D96}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{72311054-0C2C-4666-A8A6-31AE1C356AB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72311054-0C2C-4666-A8A6-31AE1C356AB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72311054-0C2C-4666-A8A6-31AE1C356AB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72311054-0C2C-4666-A8A6-31AE1C356AB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D0D2C88-4538-4341-8A8D-6B4AC4FC8D96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D0D2C88-4538-4341-8A8D-6B4AC4FC8D96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D0D2C88-4538-4341-8A8D-6B4AC4FC8D96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D0D2C88-4538-4341-8A8D-6B4AC4FC8D96}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{72311054-0C2C-4666-A8A6-31AE1C356AB4} = {88C15FB0-22D9-4B44-950B-15CC0187C7F9}
+		{3D0D2C88-4538-4341-8A8D-6B4AC4FC8D96} = {C98A5AA7-C428-4524-BD69-B7761AFE0E02}
+	EndGlobalSection
+EndGlobal

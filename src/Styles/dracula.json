@@ -1,0 +1,302 @@
+{
+  "name": "Dracula",
+  "foreground": "#f8f8f2",
+  "background": "#44475a",
+  "margin": 2,
+  "styles": {
+    "pre_wrapper": {
+      "foreground": "#bd93f9"
+    },
+    "line": {
+      "foreground": "#f8f8f2"
+    },
+    "line_numbers": {
+      "foreground": "#6272a4"
+    },
+    "line_numbers_table": {
+      "foreground": "#6272a4"
+    },
+    "line_highlight": {
+      "background": "#44475a"
+    },
+    "line_table": {
+      "foreground": "#f8f8f2"
+    },
+    "line_table_td": {
+      "foreground": "#f8f8f2"
+    },
+    "line_link": {
+      "foreground": "#50fa7b",
+      "underline": true
+    },
+    "code_line": {
+      "foreground": "#f8f8f2"
+    },
+    "error": {
+      "foreground": "#ff5555",
+      "bold": true
+    },
+    "other": {
+      "foreground": "#f8f8f2"
+    },
+    "none": {},
+    "ignore": {},
+    "keyword": {
+      "foreground": "#8be9fd",
+      "bold": true
+    },
+    "keyword_constant": {
+      "foreground": "#ffb86c"
+    },
+    "keyword_declaration": {
+      "foreground": "#ffb86c"
+    },
+    "keyword_namespace": {
+      "foreground": "#bd93f9"
+    },
+    "keyword_pseudo": {
+      "foreground": "#ff79c6"
+    },
+    "keyword_reserved": {
+      "foreground": "#ff92df"
+    },
+    "keyword_type": {
+      "foreground": "#50fa7b"
+    },
+    "name": {
+      "foreground": "#f8f8f2"
+    },
+    "name_attribute": {
+      "foreground": "#ff79c6"
+    },
+    "name_builtin": {
+      "foreground": "#50fa7b"
+    },
+    "name_builtin_pseudo": {
+      "foreground": "#bd93f9"
+    },
+    "name_class": {
+      "foreground": "#66d9ef"
+    },
+    "name_constant": {
+      "foreground": "#ffb86c"
+    },
+    "name_decorator": {
+      "foreground": "#bd93f9"
+    },
+    "name_entity": {
+      "foreground": "#f8f8f2"
+    },
+    "name_exception": {
+      "foreground": "#ff79c6"
+    },
+    "name_function": {
+      "foreground": "#50fa7b"
+    },
+    "name_function_magic": {
+      "foreground": "#ff92df"
+    },
+    "name_keyword": {
+      "foreground": "#ffb86c"
+    },
+    "name_label": {
+      "foreground": "#f8f8f2"
+    },
+    "name_namespace": {
+      "foreground": "#bd93f9"
+    },
+    "name_operator": {
+      "foreground": "#ff79c6"
+    },
+    "name_other": {
+      "foreground": "#f8f8f2"
+    },
+    "name_pseudo": {
+      "foreground": "#ff79c6"
+    },
+    "name_property": {
+      "foreground": "#50fa7b"
+    },
+    "name_tag": {
+      "foreground": "#ff79c6"
+    },
+    "name_variable": {
+      "foreground": "#f8f8f2"
+    },
+    "name_variable_anonymous": {
+      "foreground": "#f8f8f2"
+    },
+    "name_variable_class": {
+      "foreground": "#66d9ef"
+    },
+    "name_variable_global": {
+      "foreground": "#50fa7b"
+    },
+    "name_variable_instance": {
+      "foreground": "#f8f8f2"
+    },
+    "name_variable_magic": {
+      "foreground": "#ff79c6"
+    },
+    "literal": {
+      "foreground": "#f8f8f2"
+    },
+    "literal_date": {
+      "foreground": "#ffb86c"
+    },
+    "literal_other": {
+      "foreground": "#f8f8f2"
+    },
+    "literal_string": {
+      "foreground": "#f1fa8c"
+    },
+    "literal_string_affix": {
+      "foreground": "#f1fa8c"
+    },
+    "literal_string_atom": {
+      "foreground": "#f1fa8c"
+    },
+    "literal_string_backtick": {
+      "foreground": "#f1fa8c"
+    },
+    "literal_string_boolean": {
+      "foreground": "#ff79c6"
+    },
+    "literal_string_char": {
+      "foreground": "#f1fa8c"
+    },
+    "literal_string_delimiter": {
+      "foreground": "#f1fa8c"
+    },
+    "literal_string_doc": {
+      "foreground": "#f1fa8c"
+    },
+    "literal_string_double": {
+      "foreground": "#f1fa8c"
+    },
+    "literal_string_escape": {
+      "foreground": "#f1fa8c"
+    },
+    "literal_string_heredoc": {
+      "foreground": "#f1fa8c"
+    },
+    "literal_string_interpol": {
+      "foreground": "#f1fa8c"
+    },
+    "literal_string_name": {
+      "foreground": "#f1fa8c"
+    },
+    "literal_string_other": {
+      "foreground": "#f1fa8c"
+    },
+    "literal_string_regex": {
+      "foreground": "#f1fa8c"
+    },
+    "literal_string_single": {
+      "foreground": "#f1fa8c"
+    },
+    "literal_string_symbol": {
+      "foreground": "#f1fa8c"
+    },
+    "literal_number": {
+      "foreground": "#bd93f9"
+    },
+    "literal_number_bin": {
+      "foreground": "#bd93f9"
+    },
+    "literal_number_float": {
+      "foreground": "#bd93f9"
+    },
+    "literal_number_hex": {
+      "foreground": "#bd93f9"
+    },
+    "literal_number_integer": {
+      "foreground": "#bd93f9"
+    },
+    "literal_number_integer_long": {
+      "foreground": "#bd93f9"
+    },
+    "literal_number_oct": {
+      "foreground": "#bd93f9"
+    },
+    "literal_number_byte": {
+      "foreground": "#bd93f9"
+    },
+    "operator": {
+      "foreground": "#ff79c6"
+    },
+    "operator_word": {
+      "foreground": "#ff79c6"
+    },
+    "punctuation": {
+      "foreground": "#f8f8f2"
+    },
+    "comment": {
+      "foreground": "#6272a4",
+      "italic": true
+    },
+    "comment_hashbang": {
+      "foreground": "#6272a4",
+      "italic": true
+    },
+    "comment_multiline": {
+      "foreground": "#6272a4",
+      "italic": true
+    },
+    "comment_single": {
+      "foreground": "#6272a4",
+      "italic": true
+    },
+    "comment_special": {
+      "foreground": "#6272a4",
+      "italic": true
+    },
+    "comment_preproc": {
+      "foreground": "#6272a4",
+      "italic": true
+    },
+    "comment_preproc_file": {
+      "foreground": "#6272a4",
+      "italic": true
+    },
+    "generic": {
+      "foreground": "#f8f8f2"
+    },
+    "generic_deleted": {
+      "foreground": "#ff5555",
+      "bold": true
+    },
+    "generic_emph": {
+      "foreground": "#ff79c6",
+      "italic": true
+    },
+    "generic_error": {
+      "foreground": "#ff5555",
+      "bold": true
+    },
+    "generic_heading": {
+      "foreground": "#ff79c6",
+      "bold": true
+    },
+    "generic_inserted": {
+      "foreground": "#50fa7b",
+      "bold": true
+    },
+    "generic_output": {
+      "foreground": "#f8f8f2"
+    },
+    "generic_prompt": {
+      "foreground": "#ff79c6"
+    },
+    "generic_strong": {
+      "foreground": "#ff79c6",
+      "bold": true
+    },
+    "generic_subheading": {
+      "foreground": "#ff79c6"
+    },
+    "generic_traceback": {
+      "foreground": "#ff5555"
+    }
+  }
+}
