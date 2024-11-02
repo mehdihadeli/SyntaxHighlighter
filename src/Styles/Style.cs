@@ -12,20 +12,50 @@ public class Style
     public Dictionary<TokenType, TokenStyle> Styles { get; set; } = new();
 
     /// <summary>
-    /// Load theme style by name
+    /// Load an existing builtin theme style by name
     /// </summary>
     /// <param name="themeName"></param>
     /// <returns></returns>
     /// <exception cref="FileNotFoundException"></exception>
-    public static async Task<Style> LoadFromJsonAsync(string themeName)
+    public static async Task<Style> LoadThemeByName(string themeName)
     {
-        var name = $"{nameof(SyntaxHighlighter)}.{nameof(Styles)}.{themeName}";
+        var name = $"{nameof(SyntaxHighlighter)}.{nameof(Styles)}.{themeName}.json";
         var assembly = Assembly.GetExecutingAssembly();
 
         await using var stream = assembly.GetManifestResourceStream(name);
         if (stream == null)
         {
             throw new FileNotFoundException($"Theme file '{themeName}' not found.");
+        }
+
+        var options = new JsonSerializerOptions
+        {
+            Converters =
+            {
+                new TokenTypeDictionaryConverter()
+            },
+            WriteIndented = true, 
+            PropertyNamingPolicy = JsonNamingPolicy.SnakeCaseLower,
+        };
+
+        var style = await JsonSerializer.DeserializeAsync<Style>(stream, options) ?? new Style();
+
+        return style;
+    }
+    
+    /// <summary>
+    /// Load a custom theme through an embedded json theme by its fully resource name.
+    /// </summary>
+    /// <param name="fullResourceName">json theme full resource name as an embedded resource file.</param>
+    /// <param name="resourceAssembly"></param>
+    /// <returns></returns>
+    /// <exception cref="FileNotFoundException"></exception>
+    public static async Task<Style> LoadExternalThemeByResourceName(string fullResourceName, Assembly resourceAssembly)
+    {
+        await using var stream = resourceAssembly.GetManifestResourceStream(fullResourceName);
+        if (stream == null)
+        {
+            throw new FileNotFoundException($"Theme file '{fullResourceName}' not found.");
         }
 
         var options = new JsonSerializerOptions

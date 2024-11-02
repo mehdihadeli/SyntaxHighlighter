@@ -59,7 +59,7 @@ namespace SampleNamespace
 
 Lexer lexer = new CSharpLexer();
 Formatter formatter = new ConsoleFormatter256();
-var style = await Style.LoadFromJsonAsync("dracula.json");
+var style = await Style.LoadThemeByName("dracula");
 
 var tokens = lexer.Tokenize(csharpSourceCode);
 formatter.Format(tokens, Console.Out, style);

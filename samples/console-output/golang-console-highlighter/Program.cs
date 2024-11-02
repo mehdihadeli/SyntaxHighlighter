@@ -33,7 +33,7 @@ func main() {
 
 Lexer lexer = new GoLexer();
 Formatter formatter = new ConsoleFormatter256();
-var style = await Style.LoadFromJsonAsync("dracula.json");
+var style = await Style.LoadThemeByName("dracula");
 
 var tokens = lexer.Tokenize(goSourceCode);
 formatter.Format(tokens, Console.Out, style);
