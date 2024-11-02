@@ -2,6 +2,8 @@
   "name": "Dracula",
   "foreground": "#f8f8f2",
   "background": "#44475a",
+  "bold": true,
+  "italic": false,
   "margin": 2,
   "styles": {
     "pre_wrapper": {

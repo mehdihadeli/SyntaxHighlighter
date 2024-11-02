@@ -8,6 +8,8 @@ public class Style
     public string? Name { get; set; }
     public string? Background { get; set; }
     public string? Foreground { get; set; }
+    public bool Bold { get; set; }
+    public bool Italic { get; set; }
     public int Margin { get; set; }
     public Dictionary<TokenType, TokenStyle> Styles { get; set; } = new();
 

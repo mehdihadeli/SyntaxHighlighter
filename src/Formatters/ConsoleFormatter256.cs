@@ -10,6 +10,8 @@ public class ConsoleFormatter256 : Formatter
         // First, set the global background and foreground colors
         string? globalBackground = style.Background;
         string? globalForeground = style.Foreground;
+        bool globalBold = style.Bold;
+        bool globalItalic = style.Italic;
         int globalMargin = style.Margin;
 
         Console.SetCursorPosition(globalMargin, 0);
@@ -23,7 +25,8 @@ public class ConsoleFormatter256 : Formatter
             var tokenStyle = style.Get(token.Type);
 
             // Build ANSI escape sequence for styling, incorporating global styles
-            var escapeCode = BuildAnsiEscapeCode(tokenStyle, globalForeground, globalBackground);
+            var escapeCode =
+                BuildAnsiEscapeCode(tokenStyle, globalForeground, globalBackground, globalBold, globalItalic);
 
             WriteWithCursorPosition(writer, token.Value, token.Type, escapeCode, globalMargin);
         }
@@ -79,7 +82,9 @@ public class ConsoleFormatter256 : Formatter
     private string BuildAnsiEscapeCode(
         TokenStyle style,
         string? globalForeground,
-        string? globalBackground
+        string? globalBackground,
+        bool globalBold,
+        bool globalItalic
     )
     {
         var escapeSequence = "";
@@ -106,12 +111,20 @@ public class ConsoleFormatter256 : Formatter
         }
 
         // Apply text decorations
-        if (style.Bold)
+        if (globalBold)
+        {
+            escapeSequence += "\u001b[1m";
+        }
+        else if (style.Bold)
         {
             escapeSequence += "\u001b[1m";
         }
 
-        if (style.Italic)
+        if (globalItalic)
+        {
+            escapeSequence += "\u001b[3m";
+        }
+        else if (style.Italic)
         {
             escapeSequence += "\u001b[3m";
         }
