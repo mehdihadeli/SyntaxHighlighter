@@ -4,16 +4,11 @@ using SyntaxHighlighter.Styles;
 
 string csharpSourceCode =
     @"```csharp
-// This is a single-line comment
-/*
-This is a multi-line comment
-*/
-
 using System;
 
 namespace SampleNamespace
 {
-    class SampleClass
+    public class SampleClass
     {
         // A constant
         const int MaxValue = 100;
@@ -24,21 +19,9 @@ namespace SampleNamespace
             // Declare variables
             int number = 10;
             bool isEven = (number % 2 == 0);
-            string message = ""Hello, World!"";
             
             // Output
-            Console.WriteLine(message);
             Console.WriteLine($""Is the number {number} even? {isEven}"");
-
-            // Conditional statement
-            if (isEven)
-            {
-                Console.WriteLine($""{number} is even."");
-            }
-            else
-            {
-                Console.WriteLine($""{number} is odd."");
-            }
 
             // Loop
             for (int i = 0; i < MaxValue; i++)
@@ -48,11 +31,6 @@ namespace SampleNamespace
 
             // Function call
             DoSomething();
-        }
-
-        static void DoSomething()
-        {
-            Console.WriteLine(""Doing something..."");
         }
     }
 }";
